@@ -1,22 +1,24 @@
-# Spatial Analysis Research
+# Spatial Analysis — OLS vs GWR
 
 **Objective:**  
-Investigate spatial clustering and hotspots using GIS and spatial statistics.
+Compare a global OLS model with a local Geographically Weighted Regression (GWR) to assess spatial non-stationarity in the relationship between [dependent variable] and predictors.
 
-**Techniques:**  
-- Moran's I Global Autocorrelation  
-- Local Gi* Hotspot Analysis  
-- Ripley’s K Function  
-- Kernel Density Estimation
+**Data:**  
+- Spatial dataset with geometry (points/polygons) and variables: [dependent], [predictor1], [predictor2], ...  
+- Source: [describe]
 
-**Tools:**  
-ArcGIS Pro, QGIS, R
+**Methods:**  
+- Fit global OLS and inspect diagnostics (residuals, multicollinearity, global R²).  
+- Test spatial autocorrelation (Moran's I) of residuals.  
+- Fit GWR to allow coefficients to vary across space.  
+- Compare models using AIC/AICc, adjusted R², and residual Moran's I.  
+- Visualise: residuals map (OLS), local coefficients map (GWR), local R² map, and model comparison table.
 
-**Contents:**  
-- Scripts: `spatial_analysis.R`  
-- Maps: clustering & hotspots  
-- README.md → project summary
+**Key files:**  
+- `spatial_analysis.R` — full code (data cleaning → OLS → GWR → plots)  
+- `plots/` — maps and diagnostics  
+- `tables/` — model comparison outputs
 
 **Outcome:**  
-Produced clear spatial insights with reproducible code & maps.
-
+- Demonstrates whether relationships are spatially varying and which variables show non-stationarity.  
+- Shows improved fit (if any) from GWR and provides interpretable local coefficient maps.
