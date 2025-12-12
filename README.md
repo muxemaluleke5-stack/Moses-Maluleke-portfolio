@@ -201,13 +201,6 @@ R, MASS, caret, ggplot2
 
 ---
 
-# 📄 **Curriculum Vitae**
-Download my CV here:  
-👉 **[Moses Maluleke CV](./Moses_Maluleke_CV.docx)**
-
-*(Upload your CV into the root folder and the link will work.)*
-
----
 
 # 📬 **Contact**
 📧 Email: **muxemaluleke5@gmail.com**  
